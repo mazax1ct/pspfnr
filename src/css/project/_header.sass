@@ -1,0 +1,242 @@
+.header
+  background-color: #fff
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  transition: box-shadow 0.3s
+  z-index: 10
+
+  &.scrolled
+    box-shadow: 0 0 3px 0 rgba(#000, 0.2)
+
+  &__top
+    display: flex
+    font-size: 14px
+    justify-content: space-between
+    line-height: 1.5
+
+  &__ally
+    align-items: center
+    color: #000
+    display: flex
+    padding-top: 19px
+    padding-bottom: 19px
+    text-decoration: none
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $blue
+
+      svg
+        fill: $blue
+
+    svg
+      fill: #A9A9A9
+      height: 18px
+      margin-right: 6px
+      transition: fill 0.3s
+      width: 18px
+
+  &__search-opener
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    padding: 19px 0
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $blue
+
+      svg
+        fill: $blue
+
+    svg
+      fill: #a9a9a9
+      height: 18px
+      margin-right: 6px
+      transition: fill 0.3s
+      width: 18px
+
+  &__bottom
+    background-color: $light_blue
+    font-size: 18px
+    font-weight: 500
+    padding-top: 24px
+    padding-bottom: 23px
+
+  &__bottom-inner
+    align-items: center
+    display: flex
+
+  &__logo
+    margin-right: 45px
+    width: 47px
+
+  &__personal
+    align-items: center
+    color: #000
+    display: flex
+    margin-left: auto
+    padding-top: 7px
+    padding-bottom: 7px
+    text-decoration: none
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $blue
+
+      svg
+        fill: $blue
+
+    svg
+      fill: #000
+      height: 18px
+      margin-right: 6px
+      transition: fill 0.3s
+      width: 18px
+
+.main-menu
+  &__list
+    align-items: center
+    display: flex
+    list-style: none
+    margin: 0
+    padding: 0
+
+  &__item
+    position: relative
+
+    &:not(:last-child)
+      margin-right: 30px
+
+    &:hover
+      .main-menu__dropdown
+        display: block
+
+    &:focus-within
+      @media(min-width: 1024px)
+        .main-menu__dropdown
+          display: block
+
+  &__link
+    color: #000
+    display: block
+    padding-top: 7px
+    padding-bottom: 7px
+    text-decoration: none
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $blue
+
+    &:focus,
+    &:focus-within
+      & ~ .main-menu__dropdown
+        @media(min-width: 1024px)
+          display: block
+
+  &__dropdown
+    background-color: $light_blue
+    display: none
+    font-size: 16px
+    font-weight: 400
+    left: -30px
+    min-width: 280px
+    position: absolute
+    padding: 25px 30px
+    top: 100%
+    z-index: 1
+
+  &__submenu
+    list-style: none
+    margin: 0
+    padding: 0
+
+  &__submenu-link
+    color: #000
+    display: block
+    padding-top: 5px
+    padding-bottom: 5px
+    text-decoration: none
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $blue
+
+.search-popup
+  align-items: center
+  bottom: 0
+  background-color: rgba(#fff, 0.9)
+  display: none
+  justify-content: center
+  left: 0
+  position: fixed
+  padding: 48px
+  right: 0
+  top: 0
+  z-index: 100
+
+  &.is-open
+    display: flex
+
+  &__close
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: none
+    height: 40px
+    left: auto
+    padding: 0
+    position: absolute
+    right: 15px
+    top: 15px
+    width: 40px
+    z-index: 1
+
+    @media(min-width: 992px)
+      display: flex
+
+    svg
+      fill: #1a1a1a
+      height: 18px
+      width: 18px
+
+.search-bar
+  margin: auto
+  position: relative
+  max-width: 1024px
+  width: 100%
+
+  &__label
+    display: block
+
+  &__input
+    padding: 13px 20px 14px 46px
+
+  &__button
+    align-items: center
+    background-color: #fff
+    border: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 52px
+    left: 1px
+    padding: 0
+    position: absolute
+    top: 1px
+    width: 46px
+
+  &__button-icon
+    fill: $blue
+    height: 18px
+    width: 18px
