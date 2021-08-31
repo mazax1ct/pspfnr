@@ -35,11 +35,39 @@
             <a class="header__logo" href="main.html">
                 <img src="images/logo.svg" alt="На главную">
             </a>
+            <button class="js-menu-opener header__burger" type="button">
+                <svg>
+                    <use xlink:href="#burger"></use>
+                </svg>
+                Меню
+            </button>
             <nav class="main-menu">
-                <ul class="main-menu__list">
+                <ul class="main-menu__list main-menu__list--desktop">
                     <li class="main-menu__item">
                         <a class="main-menu__link" href="#">О нас</a>
-                        <div class="main-menu__dropdown">
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Программы</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Юр. помощь</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Как вступить?</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="main-menu__dropdown">
+                    <button class="js-menu-closer main-menu__dropdown-close" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#close" />
+                        </svg>
+                    </button>
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">О нас</a>
                             <ul class="main-menu__submenu">
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Для чего нужен Профсоюз</a></li>
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Руководство</a></li>
@@ -50,11 +78,9 @@
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Кодекс этики</a></li>
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Уставные документы</a></li>
                             </ul>
-                        </div>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">Программы</a>
-                        <div class="main-menu__dropdown">
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Программы</a>
                             <ul class="main-menu__submenu">
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Жилищная программа
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Топливная программа</a></li>
@@ -63,37 +89,37 @@
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Программа страхования</a></li>
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Обучающие курсы</a></li>
                             </ul>
-                        </div>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">Юр. помощь</a>
-                        <div class="main-menu__dropdown">
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Юр. помощь</a>
                             <ul class="main-menu__submenu">
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Как это работает</a></li>
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Видеокурс юридической грамотности</a></li>
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Законодательство</a></li>
                             </ul>
-                        </div>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">Как вступить?</a>
-                        <div class="main-menu__dropdown">
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Как вступить?</a>
                             <ul class="main-menu__submenu">
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Порядок и условия</a></li>
                                 <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Взносы</a></li>
                             </ul>
-                        </div>
-                    </li>
-                    <li class="main-menu__item">
-                        <a class="main-menu__link" href="#">Контакты</a>
-                    </li>
-                </ul>
+                            <a class="main-menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <a class="header__personal" href="personal.html">
                 <svg>
                     <use xlink:href="#personal"></use>
                 </svg>
-                Личный кабинет
+                <span>Личный кабинет</span>
+            </a>
+            <a class="header__cart-link" href="cart.html" title="Корзина">
+                <svg>
+                    <use xlink:href="#cart"></use>
+                </svg>
+                <span class="header__cart-qnt">1</span>
             </a>
         </div>
     </div>

@@ -39,6 +39,7 @@
             left: 0;
             opacity: 1;
             position: fixed;
+            padding: 20px;
             right: 0;
             top: 0;
             transition: opacity0.3s;
@@ -50,6 +51,11 @@
             font-family: sans-serif;
             font-size: 14px;
             margin-top: 25px;
+        }
+    
+        #preloader svg {
+            height: auto;
+            max-width: 100%
         }
     
         .loaded #preloader {
@@ -105,6 +111,36 @@
         <symbol id="close" viewBox="0 0 18 18">
             <polygon points="17.5,16.1 10.4,9 17.5,1.9 16.1,0.5 9,7.6 1.9,0.5 0.5,1.9 7.6,9 0.5,16.1 1.9,17.5 9,10.4 16.1,17.5" />
         </symbol>
+        <symbol id="cart" viewBox="0 0 18 18">
+            <path
+              d="M16.2,4.5h-3.1V4.1C13.1,1.9,11.3,0,9,0C6.7,0,4.9,1.9,4.9,4.1v0.4H1.8c-0.4,0-0.7,0.3-0.7,0.7v12.1c0,0.4,0.3,0.7,0.7,0.7h14.4c0.4,0,0.7-0.3,0.7-0.7V5.2C16.9,4.8,16.6,4.5,16.2,4.5z M6.5,4.1c0-1.4,1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5v0.4h-5V4.1z M15.3,16.4H2.7V6.1h2.2v2c0,0.1,0.1,0.2,0.2,0.2h1.3c0.1,0,0.2-0.1,0.2-0.2v-2h5v2c0,0.1,0.1,0.2,0.2,0.2H13c0.1,0,0.2-0.1,0.2-0.2v-2h2.2V16.4z" />
+        </symbol>
+        <symbol id="burger" viewBox="0 0 18 18">
+            <path d="M18,15H0v-2h18V15z M18,10H0V8h18V10z M18,5H0V3h18V5z" />
+        </symbol>
+        <symbol id="inst" viewBox="0 0 26 26">
+            <g>
+                <path
+                  d="M25.7,7.8c0-1.1-0.2-2.1-0.6-3.1c-0.3-0.8-0.8-1.6-1.5-2.3c-0.6-0.6-1.4-1.1-2.3-1.5c-1-0.4-2-0.6-3.1-0.6c-1.4-0.1-1.8-0.1-5.3-0.1c-3.5,0-3.9,0-5.3,0.1c-1.1,0-2.1,0.2-3.1,0.6C3.8,1.2,3,1.7,2.4,2.4S1.3,3.8,0.9,4.6c-0.4,1-0.6,2-0.6,3.1C0.3,9.1,0.3,9.5,0.3,13c0,3.5,0,3.9,0.1,5.3c0,1.1,0.2,2.1,0.6,3.1c0.3,0.8,0.8,1.6,1.5,2.3c0.6,0.6,1.4,1.1,2.3,1.5c1,0.4,2,0.6,3.1,0.6c1.4,0.1,1.8,0.1,5.3,0.1c3.5,0,3.9,0,5.3-0.1c1.1,0,2.1-0.2,3.1-0.6c0.8-0.3,1.6-0.8,2.3-1.5c0.6-0.6,1.1-1.4,1.5-2.3c0.4-1,0.6-2,0.6-3.1c0.1-1.4,0.1-1.8,0.1-5.3C25.7,9.6,25.7,9.1,25.7,7.8z M13,19.5c-3.6,0-6.5-2.9-6.5-6.5c0-3.6,2.9-6.5,6.5-6.5c1.7,0,3.4,0.7,4.6,1.9c1.2,1.2,1.9,2.9,1.9,4.6c0,1.7-0.7,3.4-1.9,4.6C16.4,18.8,14.7,19.5,13,19.5z M19.8,7.7c-0.2,0-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3c-0.1-0.1-0.3-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6c0-0.2,0-0.4,0.1-0.6c0.1-0.2,0.2-0.4,0.3-0.5C18.9,5,19,4.8,19.2,4.8c0.2-0.1,0.4-0.1,0.6-0.1c0.2,0,0.4,0,0.6,0.1c0.2,0.1,0.4,0.2,0.5,0.3c0.1,0.1,0.3,0.3,0.3,0.5c0.1,0.2,0.1,0.4,0.1,0.6C21.3,7,20.6,7.7,19.8,7.7z" />
+                <path d="M13,17.3c2.3,0,4.3-1.9,4.3-4.3c0-2.3-1.9-4.3-4.3-4.3c-2.3,0-4.3,1.9-4.3,4.3C8.7,15.3,10.7,17.3,13,17.3z" />
+            </g>
+        </symbol>
+        <symbol id="ok" viewBox="0 0 26 26">
+            <path
+              d="M10.7,8.5c0-1.3,1-2.3,2.3-2.3s2.3,1,2.3,2.3c0,1.3-1,2.3-2.3,2.3S10.7,9.8,10.7,8.5L10.7,8.5z M25.8,3v20c0,1.5-1.2,2.7-2.7,2.7H3c-1.5,0-2.7-1.2-2.7-2.7V3c0-1.5,1.2-2.7,2.7-2.7h20C24.5,0.3,25.8,1.5,25.8,3z M8.4,8.5c0,2.5,2.1,4.6,4.6,4.6s4.6-2.1,4.6-4.6c0-2.6-2.1-4.6-4.6-4.6S8.4,6,8.4,8.5z M18.3,13.7c-0.3-0.5-1-1-1.9-0.2c0,0-1.3,1-3.4,1s-3.4-1-3.4-1c-1-0.8-1.7-0.3-1.9,0.2c-0.4,0.9,0.1,1.3,1.2,2.1c1,0.6,2.3,0.9,3.2,1l-0.7,0.7c-1,1-2,2-2.7,2.7c-1,1,0.6,2.6,1.6,1.6l2.7-2.7c1,1,2,2,2.7,2.7c1,1,2.6-0.6,1.6-1.6l-2.7-2.7l-0.7-0.7c0.9-0.1,2.2-0.3,3.2-1C18.3,15,18.8,14.6,18.3,13.7z" />
+        </symbol>
+        <symbol id="vk" viewBox="0 0 26 26">
+            <path
+              d="M16.9,0.6H9.1c-7.1,0-8.8,1.6-8.8,8.6v7.6c0,6.9,1.7,8.6,8.8,8.6h7.8c7.1,0,8.8-1.6,8.8-8.6V9.2C25.8,2.3,24,0.6,16.9,0.6z M20.8,18.3H19c-0.7,0-0.9-0.5-2.2-1.8c-1.1-1-1.6-1.2-1.9-1.2c-0.4,0-0.5,0.1-0.5,0.6v1.6c0,0.4-0.1,0.7-1.3,0.7c-2,0-4.1-1.2-5.7-3.3c-2.3-3.2-2.9-5.5-2.9-6c0-0.3,0.1-0.5,0.6-0.5H7c0.5,0,0.6,0.2,0.8,0.7c0.9,2.6,2.4,4.8,3.1,4.8c0.2,0,0.3-0.1,0.3-0.7v-2.7c-0.1-1.2-0.7-1.3-0.7-1.8c0-0.2,0.2-0.4,0.5-0.4h2.9c0.4,0,0.5,0.2,0.5,0.7v3.6c0,0.4,0.2,0.5,0.3,0.5c0.2,0,0.4-0.1,0.9-0.6c1.3-1.5,2.3-3.7,2.3-3.7c0.1-0.3,0.3-0.5,0.8-0.5h1.9c0.6,0,0.7,0.3,0.6,0.7c-0.2,1-2.5,4.2-2.5,4.2c-0.2,0.3-0.3,0.5,0,0.8c0.2,0.3,0.8,0.8,1.3,1.3c0.8,0.9,1.4,1.6,1.6,2.1C21.6,18,21.4,18.3,20.8,18.3L20.8,18.3z" />
+        </symbol>
+        <symbol id="fb" viewBox="0 0 26 26">
+            <path
+              d="M5.1,0.3c-2.5,0-4.5,2.1-4.5,4.7v16.2c0,2.6,2,4.7,4.5,4.7h8.5v-10h-2.6v-3.6h2.6V9.1c0-2.4,1.5-4.6,5-4.6c1.4,0,2.5,0.1,2.5,0.1L21,8c0,0-1.1,0-2.2,0c-1.3,0-1.5,0.6-1.5,1.6v2.6h3.8L21,15.8h-3.6v10h3.5c2.5,0,4.5-2.1,4.5-4.7V4.9c0-2.6-2-4.7-4.5-4.7L5.1,0.3L5.1,0.3z" />
+        </symbol>
+        <symbol id="yt" viewBox="0 0 26 26">
+            <path
+              d="M10.9,9.9l5.4,3.1l-5.4,3.1V9.9z M25.8,3v20c0,1.5-1.2,2.7-2.7,2.7H3c-1.5,0-2.7-1.2-2.7-2.7V3c0-1.5,1.2-2.7,2.7-2.7h20C24.5,0.3,25.8,1.5,25.8,3z M23.4,13c0,0,0-3.4-0.4-5c-0.2-0.9-0.9-1.6-1.8-1.8C19.5,5.7,13,5.7,13,5.7s-6.5,0-8.1,0.4C4,6.4,3.3,7.1,3.1,8c-0.4,1.6-0.4,5-0.4,5s0,3.4,0.4,5c0.2,0.9,0.9,1.6,1.8,1.8c1.6,0.4,8.1,0.4,8.1,0.4s6.5,0,8.1-0.4c0.9-0.2,1.6-0.9,1.8-1.8C23.4,16.4,23.4,13,23.4,13z" />
+        </symbol>
     </svg>
 
     <header class="header">
@@ -144,11 +180,39 @@
                 <a class="header__logo" href="main.html">
                     <img src="images/logo.svg" alt="На главную">
                 </a>
+                <button class="js-menu-opener header__burger" type="button">
+                    <svg>
+                        <use xlink:href="#burger"></use>
+                    </svg>
+                    Меню
+                </button>
                 <nav class="main-menu">
-                    <ul class="main-menu__list">
+                    <ul class="main-menu__list main-menu__list--desktop">
                         <li class="main-menu__item">
                             <a class="main-menu__link" href="#">О нас</a>
-                            <div class="main-menu__dropdown">
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Программы</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Юр. помощь</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Как вступить?</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="main-menu__dropdown">
+                        <button class="js-menu-closer main-menu__dropdown-close" type="button" title="Закрыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#close" />
+                            </svg>
+                        </button>
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">О нас</a>
                                 <ul class="main-menu__submenu">
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Для чего нужен Профсоюз</a></li>
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Руководство</a></li>
@@ -159,11 +223,9 @@
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Кодекс этики</a></li>
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Уставные документы</a></li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">Программы</a>
-                            <div class="main-menu__dropdown">
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Программы</a>
                                 <ul class="main-menu__submenu">
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Жилищная программа
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Топливная программа</a></li>
@@ -172,187 +234,360 @@
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Программа страхования</a></li>
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Обучающие курсы</a></li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">Юр. помощь</a>
-                            <div class="main-menu__dropdown">
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Юр. помощь</a>
                                 <ul class="main-menu__submenu">
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Как это работает</a></li>
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Видеокурс юридической грамотности</a></li>
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Законодательство</a></li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">Как вступить?</a>
-                            <div class="main-menu__dropdown">
+                            </li>
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Как вступить?</a>
                                 <ul class="main-menu__submenu">
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Порядок и условия</a></li>
                                     <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Взносы</a></li>
                                 </ul>
-                            </div>
-                        </li>
-                        <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">Контакты</a>
-                        </li>
-                    </ul>
+                                <a class="main-menu__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <a class="header__personal" href="personal.html">
                     <svg>
                         <use xlink:href="#personal"></use>
                     </svg>
-                    Личный кабинет
+                    <span>Личный кабинет</span>
+                </a>
+                <a class="header__cart-link" href="cart.html" title="Корзина">
+                    <svg>
+                        <use xlink:href="#cart"></use>
+                    </svg>
+                    <span class="header__cart-qnt">1</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <div class="page-content">
+    <main class="page-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="main.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">О нас</a></a>
+            </li>
+            <li class="breadcrumbs__item">Руководство</li>
+        </ul>
+
         <div class="container">
-            <h1>Заголовок типа h1</h1>
-            <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
-            <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким
-                большим
-                художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
-                прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость
-                всемогущего,
-                создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
-                часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
-            <h2>Заголовок типа h2</h2>
-            <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким
-                большим
-                художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
-                прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость
-                всемогущего,
-                создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
-                часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
-            <h3>Заголовок типа h3</h3>
-            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее
-                всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
-            <ul>
-                <li>маркированный список</li>
-                <li>маркированный список</li>
-                <li>маркированный список</li>
-            </ul>
-            <ol>
-                <li>нумерованный список</li>
-                <li>нумерованный список</li>
-                <li>нумерованный список</li>
-            </ol>
-            <form method="post" class="form" action="index.html">
-                <p>
-                    <label>
-                        <input class="input" type="text" value="" placeholder="текст..." />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input class="input" type="text" value="" placeholder="текст..." disabled />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <textarea class="textarea" placeholder="текст..."></textarea>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <textarea class="textarea" placeholder="текст..." disabled></textarea>
-                    </label>
-                </p>
-                <p>
-                    <label class="checkbox-label">
-                        <input type="checkbox" />
-                        <span class="checkbox-icon"></span>
-                        <span class="checkbox-text">Чекбокс</span>
-                    </label>
-                </p>
-                <p>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked />
-                        <span class="checkbox-icon"></span>
-                        <span class="checkbox-text">Чекбокс</span>
-                    </label>
-                </p>
-                <p>
-                    <label class="checkbox-label">
-                        <input type="checkbox" disabled />
-                        <span class="checkbox-icon"></span>
-                        <span class="checkbox-text">Чекбокс</span>
-                    </label>
-                </p>
-                <p>
-                    <label class="checkbox-label">
-                        <input type="checkbox" checked disabled />
-                        <span class="checkbox-icon"></span>
-                        <span class="checkbox-text">Чекбокс</span>
-                    </label>
-                </p>
-                <p>
-                    <label class="radio-label">
-                        <input id="radio1" type="radio" name="radio" value="1" checked />
-                        <span class="radio-icon"></span>
-                        <span class="radio-text">Радио</span>
-                    </label>
-                </p>
-                <p>
-                    <label class="radio-label">
-                        <input id="radio2" type="radio" name="radio" value="2" />
-                        <span class="radio-icon"></span>
-                        <span class="radio-text">Радио</span>
-                    </label>
-                </p>
-                <p>
-                    <label class="radio-label">
-                        <input id="radio2" type="radio" name="radio" value="3" disabled />
-                        <span class="radio-icon"></span>
-                        <span class="radio-text">Радио</span>
-                    </label>
-                </p>
-                <p>
-                    <a class="button disabled" href="javascript:void(0)" tabindex="-1">Я кнопка!</a>
-                    <button class="button" type="button">Нет я кнопка!</button>
-                    <input class="button" type="button" value="Акститесь!">
-                </p>
-                <p>
-                <div class="select">
-                    <select>
-                        <option value="1">Вариант 1</option>
-                        <option value="1">Вариант 2</option>
-                        <option value="1">Вариант 3</option>
-                    </select>
+            <div class="text-block">
+                <h1>Заголовок типа h1</h1>
+                <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+                <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким
+                    большим
+                    художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого
+                    ручья и,
+                    прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость
+                    всемогущего,
+                    создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг,
+                    меня
+                    часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
+                <h2>Заголовок типа h2</h2>
+                <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким
+                    большим
+                    художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого
+                    ручья и,
+                    прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость
+                    всемогущего,
+                    создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг,
+                    меня
+                    часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
+                <h3>Заголовок типа h3</h3>
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и
+                    обеспечивает ее
+                    всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+                <ul>
+                    <li>маркированный список</li>
+                    <li>маркированный список</li>
+                    <li>маркированный список</li>
+                </ul>
+                <h4>Заголовок типа h4</h4>
+                <ol>
+                    <li>нумерованный список</li>
+                    <li>нумерованный список</li>
+                    <li>нумерованный список</li>
+                </ol>
+                <h5>Заголовок типа h5</h5>
+                <form method="post" class="form" action="index.html">
+                    <p>
+                        <label>
+                            <input class="input" type="text" value="" placeholder="текст..." />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="input" type="text" value="" placeholder="текст..." disabled />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <textarea class="textarea" placeholder="текст..."></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <textarea class="textarea" placeholder="текст..." disabled></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="checkbox-label">
+                            <input type="checkbox" />
+                            <span class="checkbox-icon"></span>
+                            <span class="checkbox-text">Чекбокс</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked />
+                            <span class="checkbox-icon"></span>
+                            <span class="checkbox-text">Чекбокс</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="checkbox-label">
+                            <input type="checkbox" disabled />
+                            <span class="checkbox-icon"></span>
+                            <span class="checkbox-text">Чекбокс</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked disabled />
+                            <span class="checkbox-icon"></span>
+                            <span class="checkbox-text">Чекбокс</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="radio-label">
+                            <input id="radio1" type="radio" name="radio" value="1" checked />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Радио</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="radio-label">
+                            <input id="radio2" type="radio" name="radio" value="2" />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Радио</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="radio-label">
+                            <input id="radio2" type="radio" name="radio" value="3" disabled />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Радио</span>
+                        </label>
+                    </p>
+                    <p>
+                        <a class="btn btn--type_1" href="javascript:void(0)">Я кнопка!</a>
+                        <button class="btn btn--type_1" type="button">Нет я кнопка!</button>
+                        <input class="btn btn--type_1" type="button" value="Акститесь!">
+                    </p>
+                    <p>
+                        <a class="btn btn--type_1 disabled" href="javascript:void(0)">Я кнопка!</a>
+                        <button class="btn btn--type_1" type="button" disabled>Нет я кнопка!</button>
+                        <input class="btn btn--type_1" type="button" value="Акститесь!" disabled>
+                    </p>
+                    <p>
+                        <a class="btn btn--type_2" href="javascript:void(0)">Я кнопка!</a>
+                        <button class="btn btn--type_2" type="button">Нет я кнопка!</button>
+                        <input class="btn btn--type_2" type="button" value="Акститесь!">
+                    </p>
+                    <p>
+                        <a class="btn btn--type_2 disabled" href="javascript:void(0)">Я кнопка!</a>
+                        <button class="btn btn--type_2" type="button" disabled>Нет я кнопка!</button>
+                        <input class="btn btn--type_2" type="button" value="Акститесь!" disabled>
+                    </p>
+                    <p>
+                    <div class="select">
+                        <select>
+                            <option value="1">Вариант 1</option>
+                            <option value="1">Вариант 2</option>
+                            <option value="1">Вариант 3</option>
+                        </select>
+                    </div>
+                    </p>
+                </form>
+                <h6>Заголовок типа h6</h6>
+                <div class="responsive-table">
+                    <table>
+                        <tr>
+                            <th>Заголовок таблицы</th>
+                            <th>Заголовок таблицы</th>
+                            <th>Заголовок таблицы</th>
+                        </tr>
+                        <tr>
+                            <td>ячейка таблицы</td>
+                            <td>ячейка таблицы</td>
+                            <td>ячейка таблицы</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка таблицы</td>
+                            <td>ячейка таблицы</td>
+                            <td>ячейка таблицы</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка таблицы</td>
+                            <td>ячейка таблицы</td>
+                            <td>ячейка таблицы</td>
+                        </tr>
+                    </table>
                 </div>
-                </p>
-            </form>
-            <table>
-                <tr>
-                    <th>Заголовок таблицы</th>
-                    <th>Заголовок таблицы</th>
-                    <th>Заголовок таблицы</th>
-                </tr>
-                <tr>
-                    <td>ячейка таблицы</td>
-                    <td>ячейка таблицы</td>
-                    <td>ячейка таблицы</td>
-                </tr>
-                <tr>
-                    <td>ячейка таблицы</td>
-                    <td>ячейка таблицы</td>
-                    <td>ячейка таблицы</td>
-                </tr>
-                <tr>
-                    <td>ячейка таблицы</td>
-                    <td>ячейка таблицы</td>
-                    <td>ячейка таблицы</td>
-                </tr>
-            </table>
+
+                <div class="blockquote">
+                    <p><b>Статья 11</b> Закона РФ о профсоюзах закрепляет их право на представительство и защиту социально-трудовых прав и интересов работников, а также на участие в нормотворчестве, при котором они проявляют обе свои функции.
+                        Профсоюзы вправе выступать с предложениями о принятии законов и иных нормативных правовых актов, касающихся социально-трудовой сферы.</p>
+                </div>
+                <hr>
+                <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+                <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким
+                    большим
+                    художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого
+                    ручья и,
+                    прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость
+                    всемогущего,
+                    создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг,
+                    меня
+                    часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
+            </div>
         </div>
+    </main>
+
+    <div class="include-area container">
+        <div class="info">
+            <h2>ПСПФНР сегодня</h2>
+            <div class="info__columns">
+                <div class="info__column">
+                    <p class="info__title"><small>></small> 6 <small>лет</small></p>
+                    <p>со дня основания</p>
+                </div>
+                <div class="info__column">
+                    <p class="info__title"><small>></small> 80</p>
+                    <p>городских подразделений</p>
+                </div>
+                <div class="info__column">
+                    <p class="info__title"><small>></small> 20 <small>000</small></p>
+                    <p>членов организации</p>
+                </div>
+            </div>
+            <a class="btn btn--type_1" href="#"><span>Вступить в ПСПФНР</span></a>
+        </div>
+
+        <ul class="links">
+            <li class="links__item">
+                <a class="links__link" href="#">Вступить в ПСПФНР</a>
+            </li>
+            <li class="links__item">
+                <a class="links__link" href="#">Юрподдержка</a>
+            </li>
+            <li class="links__item">
+                <a class="links__link" href="#">Программы лояльности</a>
+            </li>
+        </ul>
     </div>
 
     <footer class="footer">
-        <div class="container">
-            Подвал
+        <div class="footer__top container">
+            <div class="footer__logo"><img src="images/logo.svg" alt="ПСПФНР"></div>
+            <div class="footer__column">
+                <p class="footer__title"><a href="#">О нас</a></p>
+                <ul class="footer__menu">
+                    <li><a href="#">Для чего нужен Профсоюз</a></li>
+                    <li><a href="#">Руководство</a></li>
+                    <li><a href="#">Мы помогаем</a></li>
+                    <li><a href="#">Слабослышащим членам Профсоюза</a></li>
+                    <li><a href="#">Структура Профсоюза</a></li>
+                    <li><a href="#">Представительства в регионах</a></li>
+                    <li><a href="#">Кодекс этики</a></li>
+                    <li><a href="#">Уставные документы</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <p class="footer__title"><a href="#">Программы</a></p>
+                <ul class="footer__menu">
+                    <li><a href="#">Жилищная программа</a></li>
+                    <li><a href="#">Топливная программа</a></li>
+                    <li><a href="#">Транспортная программа</a></li>
+                    <li><a href="#">Санаторно-курортная программа</a></li>
+                    <li><a href="#">Программа страхования</a></li>
+                    <li><a href="#">Обучающие курсы</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <p class="footer__title"><a href="#">Юр. помощь</a></p>
+                <ul class="footer__menu">
+                    <li><a href="#">Как это работает</a></li>
+                    <li><a href="#">Видеокурс юридической грамотности</a></li>
+                    <li><a href="#">Законодательство</a></li>
+                </ul>
+                <p class="footer__title"><a href="#">Новости</a></p>
+                <p class="footer__title"><a href="#">Как вступить</a></p>
+                <ul class="footer__menu">
+                    <li><a href="#">Порядок и условия</a></li>
+                    <li><a href="#">Взносы</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <p class="footer__title"><a href="#">Контакты</a></p>
+                <div class="social-links">
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Instagram">
+                        <svg>
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Одноклассники">
+                        <svg>
+                            <use xlink:href="#ok"></use>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Вконтакте">
+                        <svg>
+                            <use xlink:href="#vk"></use>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="Facebook">
+                        <svg>
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer noopener" title="YouTube">
+                        <svg>
+                            <use xlink:href="#yt"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__title">Горячая линия юридической<br> поддержки:</p>
+                <p class="footer__phone"><a href="tel:+78003503385">8 800 350-33-85</a></p>
+                <p class="footer__work-time">
+                    ПН-ПТ: 9.00-18.00<br>
+                    СБ-ВС: Выходной
+                </p>
+            </div>
+        </div>
+        <div class="footer__emails">
+            <div class="container">
+                <span>Топливная программа: <a href="milto:">toplivo@pspfnr.com</a></span>
+                <span>Юридическая помощь: <a href="mailto:toplivo@pspfnr.com">toplivo@pspfnr.com</a></span>
+                <span>Пресс-служба: <a href="mailto:toplivo@pspfnr.com">toplivo@pspfnr.com</a></span>
+            </div>
+        </div>
+        <div class="footer__links">
+            <div class="container">
+                <a href="#">Условия обработки персональных данных</a>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+            </div>
         </div>
     </footer>
 

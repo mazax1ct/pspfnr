@@ -1,0 +1,50 @@
+.links
+  font-size: 16px
+  font-weight: 600
+  list-style: none
+  line-height: 1.5
+  margin-top: 0
+  margin-bottom: 0
+  margin-left: -10px
+  margin-right: -10px
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+
+  @media(min-width: 1024px)
+    font-size: 18px
+
+  &:not(:last-child)
+    margin-bottom: 40px
+
+    @media(min-width: 1024px)
+      margin-bottom: 80px
+
+  &__item
+    padding-left: 10px
+    padding-right: 10px
+    text-align: center
+
+    @media(min-width: 768px)
+      width: calc(100% / 3)
+
+    &:not(:last-child)
+      margin-bottom: 20px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  &__link
+    align-items: center
+    background-color: $light_blue
+    color: $blue
+    display: flex
+    height: 90px
+    justify-content: center
+    text-decoration: none
+    transition: background-color 0.3s
+
+    &:hover,
+    &:focus
+      background-color: $light_blue_hover

@@ -1,0 +1,21 @@
+.social-links
+  display: flex
+  flex-wrap: wrap
+
+.social-link
+  align-items: center
+  display: flex
+  height: 40px
+  justify-content: center
+  width: 40px
+
+  &:hover,
+  &:focus
+    svg
+      fill: $blue_hover
+
+  svg
+    fill: $blue
+    height: 26px
+    transition: fill 0.3s
+    width: 26px

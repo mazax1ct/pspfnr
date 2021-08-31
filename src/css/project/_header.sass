@@ -20,6 +20,7 @@
     align-items: center
     color: #000
     display: flex
+    font-weight: 400
     padding-top: 19px
     padding-bottom: 19px
     text-decoration: none
@@ -45,6 +46,7 @@
     border: none
     cursor: pointer
     display: flex
+    font-weight: 400
     padding: 19px 0
     transition: color 0.3s
 
@@ -64,23 +66,61 @@
 
   &__bottom
     background-color: $light_blue
-    font-size: 18px
+    font-size: 14px
     font-weight: 500
-    padding-top: 24px
-    padding-bottom: 23px
+    padding-top: 6px
+    padding-bottom: 6px
+
+    @media(min-width: 1024px)
+      padding-top: 24px
+      padding-bottom: 23px
+
+    @media(min-width: 1300px)
+      font-size: 18px
 
   &__bottom-inner
     align-items: center
     display: flex
 
   &__logo
+    min-width: 47px
     margin-right: 45px
     width: 47px
+
+  &__burger
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    font-size: 18px
+    font-weight: 700
+    display: flex
+    height: 40px
+    margin-right: 40px
+    padding: 0
+    transition: color 0.3s
+
+    &:hover,
+    &:focus,
+    &.is-active
+      color: $blue
+
+      svg
+        fill: $blue
+
+    svg
+      fill: #000
+      height: 18px
+      margin-right: 16px
+      transition: fill 0.3s
+      width: 18px
 
   &__personal
     align-items: center
     color: #000
     display: flex
+    height: 40px
+    min-width: 40px
     margin-left: auto
     padding-top: 7px
     padding-bottom: 7px
@@ -97,32 +137,91 @@
     svg
       fill: #000
       height: 18px
-      margin-right: 6px
       transition: fill 0.3s
       width: 18px
 
-.main-menu
-  &__list
+    span
+      margin-left: 6px
+
+      @media(max-width: 1023px)
+        display: none
+
+  &__cart-link
     align-items: center
+    color: #000
     display: flex
+    height: 40px
+    justify-content: center
+    margin-left: 15px
+    margin-right: -7px
+    position: relative
+    text-decoration: none
+    width: 40px
+
+    &:hover,
+    &:focus
+      svg
+        fill: $blue_hover
+
+    svg
+      fill: $blue
+      height: 18px
+      transition: fill 0.3s
+      width: 18px
+
+  &__cart-qnt
+    align-items: center
+    border-radius: 50%
+    background-color: $red
+    color: #fff
+    font-size: 10px
+    font-weight: 700
+    display: flex
+    height: 15px
+    justify-content: center
+    left: auto
+    position: absolute
+    top: 5px
+    right: 5px
+    width: 15px
+    z-index: 1
+
+.main-menu
+  &.is-open
+    .main-menu__dropdown
+      box-shadow: 0 1px 1px 0 rgba(#000, 0.1)
+      bottom: 0
+      display: block
+      left: 0
+      overflow-y: auto
+      position: fixed
+      right: 0
+      top: 0
+
+      @media(min-width: 1024px)
+        bottom: auto
+        position: absolute
+        left: 0
+        top: 100%
+        width: 100%
+
+  &__list
     list-style: none
     margin: 0
     padding: 0
+
+    @media(min-width: 1024px)
+      display: flex
+
+    &--desktop
+      @media(max-width: 1023px)
+        display: none
 
   &__item
     position: relative
 
     &:not(:last-child)
-      margin-right: 30px
-
-    &:hover
-      .main-menu__dropdown
-        display: block
-
-    &:focus-within
-      @media(min-width: 1024px)
-        .main-menu__dropdown
-          display: block
+      padding-right: 30px
 
   &__link
     color: #000
@@ -136,27 +235,69 @@
     &:focus
       color: $blue
 
-    &:focus,
-    &:focus-within
-      & ~ .main-menu__dropdown
-        @media(min-width: 1024px)
-          display: block
-
   &__dropdown
     background-color: $light_blue
     display: none
     font-size: 16px
-    font-weight: 400
-    left: -30px
-    min-width: 280px
+    font-weight: 300
+    padding-top: 25px
+    padding-bottom: 25px
+    z-index: 10
+
+    @media(min-width: 1024px) and (max-width: 1300px)
+      font-size: 14px
+
+    @media(min-width: 1300px)
+      padding-top: 40px
+      padding-bottom: 15px
+
+    .main-menu__list
+      margin-left: auto
+      margin-right: auto
+      max-width: 1320px
+      padding-left: 20px
+      padding-right: 20px
+
+    .main-menu__item
+      @media(min-width: 1024px)
+        width: 25%
+
+    .main-menu__link
+      font-size: 18px
+      font-weight: 600
+      line-height: 1.5
+      padding: 0
+      margin-bottom: 20px
+
+  &__dropdown-close
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
     position: absolute
-    padding: 25px 30px
-    top: 100%
+    padding: 0
+    right: 0
+    top: 0
+    width: 40px
     z-index: 1
+
+    @media(min-width: 1024px)
+      display: none
+
+    svg
+      fill: #000
+      height: 18px
+      width: 18px
 
   &__submenu
     list-style: none
-    margin: 0
+    line-height: 1.6
+    margin-top: 0
+    margin-bottom: 25px
     padding: 0
 
   &__submenu-link
@@ -174,12 +315,12 @@
 .search-popup
   align-items: center
   bottom: 0
-  background-color: rgba(#fff, 0.9)
+  background-color: #fff
   display: none
   justify-content: center
   left: 0
   position: fixed
-  padding: 48px
+  padding: 48px 20px
   right: 0
   top: 0
   z-index: 100
@@ -192,8 +333,9 @@
     background-color: transparent
     border: none
     cursor: pointer
-    display: none
+    display: flex
     height: 40px
+    justify-content: center
     left: auto
     padding: 0
     position: absolute
@@ -201,9 +343,6 @@
     top: 15px
     width: 40px
     z-index: 1
-
-    @media(min-width: 992px)
-      display: flex
 
     svg
       fill: #1a1a1a
