@@ -1,0 +1,95 @@
+.video
+  display: block
+  margin-top: 40px
+  margin-bottom: 40px
+  margin-left: 0
+  margin-right: 0
+
+  &:last-child
+    margin-bottom: 0
+
+  &:first-child
+    margin-top: 0
+
+  time
+    color: #9393A1
+    display: block
+    font-size: 14px
+    line-height: 1.5
+    margin-bottom: 8px
+
+  &__title
+    font-size: 16px
+    font-weight: 500
+    line-height: 1.5
+    margin-bottom: 20px
+    margin-top: 0
+
+    @media(min-width: 1024px)
+      font-size: 22px
+
+  &__container
+    position: relative
+    width: 100%
+    height: 0
+    padding-bottom: 56.25%
+
+  &__link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+    &::before
+      background: url('../images/logo_big.svg') no-repeat 0 0 / 100% auto transparent
+      content: ''
+      height: 0
+      left: 15px
+      max-width: 210px
+      padding-bottom: 7.144%
+      pointer-events: none
+      position: absolute
+      top: 15px
+      width: 25%
+      z-index: 1
+
+      @media(min-width: 768px)
+        left: 30px
+        top: 30px
+
+  &__media,
+  &__iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: none
+
+  &__button
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 1
+    padding: 0
+    width: 40px
+    height: 40px
+    border: none
+    background-color: transparent
+    transform: translate(-50%, -50%)
+    cursor: pointer
+
+    @media(min-width: 768px)
+      height: 70px
+      width: 70px
+
+    svg
+      fill: #fff
+      filter: drop-shadow(3px 10px 21px rgba(#000, 0.25))
+      width: 40px
+      height: 40px
+
+      @media(min-width: 768px)
+        height: 70px
+        width: 70px

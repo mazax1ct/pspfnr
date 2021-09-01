@@ -1,0 +1,62 @@
+.hot-line
+  line-height: 1.5
+
+  &--type_1,
+  &--type_2
+    padding: 20px
+    margin-top: 40px
+    margin-bottom: 40px
+
+    &:first-child
+      margin-top: 0
+
+    &:last-child
+      margin-bottom: 0
+
+    @media(min-width: 768px)
+      padding: 40px
+
+  &--type_1
+    background-color: $light_blue
+
+  &--type_2
+    border: 1px solid $border-color
+
+  &__title
+    font-size: 20px
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      font-size: 28px
+
+  &__phone
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      font-size: 36px
+
+    a
+      color: $blue
+      text-decoration: none
+      transition: color 0.3s
+
+      &:hover,
+      &:focus
+        color: $blue_hover
+
+  p.hot-line__work-time
+    margin-bottom: -5px
+
+  &__work-time
+    display: flex
+    flex-wrap: wrap
+    font-size: 14px
+
+    span
+      margin-bottom: 5px
+
+      &:not(:last-child)
+        margin-right: 40px

@@ -1,0 +1,79 @@
+.document
+  border: 1px solid $border-color
+  margin-top: 40px
+  margin-bottom: 40px
+  padding: 15px
+
+  @media(min-width: 768px)
+    padding: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+  &:first-child
+    margin-top: 0
+
+  &__title
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 20px
+    margin-top: 0
+
+    @media(min-width: 1024px)
+      font-size: 22px
+      margin-bottom: 35px
+
+  .file
+    margin-top: 0
+    margin-bottom: 0
+
+.file
+  line-height: 1.5
+  margin-top: 40px
+  margin-bottom: 40px
+
+
+  &:last-child
+    margin-bottom: 0
+
+  &:first-child
+    margin-bottom: 0
+
+  &--type_1
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='28' viewBox='0 0 20 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.7 7.29999L12.7 0.299986C12.612 0.202278 12.5038 0.124848 12.383 0.07305C12.2621 0.0212524 12.1314 -0.00367677 12 -1.38078e-05H2C1.47005 0.00156892 0.962265 0.212791 0.587535 0.587521C0.212805 0.962251 0.00158273 1.47004 0 1.99999V26C0.00158273 26.5299 0.212805 27.0377 0.587535 27.4125C0.962265 27.7872 1.47005 27.9984 2 28H18C18.5299 27.9984 19.0377 27.7872 19.4125 27.4125C19.7872 27.0377 19.9984 26.5299 20 26V7.99999C20.0037 7.86854 19.9787 7.73787 19.9269 7.61701C19.8751 7.49615 19.7977 7.38798 19.7 7.29999ZM12 2.39999L17.6 7.99999H12V2.39999ZM18 26H2V1.99999H10V7.99999C10.0016 8.52993 10.2128 9.03772 10.5875 9.41245C10.9623 9.78718 11.4701 9.9984 12 9.99999H18V26Z' fill='%234242EA'/%3E%3C/svg%3E")
+    background-position: 4px 4px
+    background-repeat: no-repeat
+    position: relative
+    padding-left: 40px
+
+    @media(min-width: 768px)
+      padding-left: 55px
+
+  &--type_2
+    background-color: $light_blue
+    max-width: 420px
+    padding: 20px
+
+    @media(min-width: 768px)
+      padding-left: 30px
+      padding-right: 30px
+
+  &__name
+    font-size: 16px
+    font-weight: 500
+    margin-bottom: 15px
+
+    @media(min-width: 1024px)
+      font-size: 20px
+
+  &__image
+    margin-top: 25px
+    margin-bottom: 25px
+
+  &__link
+    color: $blue
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $blue_hover

@@ -1,0 +1,42 @@
+.slider-block
+  &:not(:last-child)
+    margin-bottom: 40px
+
+  &__slider
+    &:not(:last-child)
+      margin-bottom: 15px
+
+    .swiper-button-next,
+    .swiper-button-prev
+      align-items: center
+      border-radius: 4px
+      border: none
+      background-color: rgba(#000, 0.2)
+      height: 40px
+      justify-content: center
+      width: 40px
+
+      &::after
+        display: none
+
+      svg
+        fill: #fff
+        height: 18px
+        width: 18px
+
+  &__thumbs
+    &:not(.swiper-initialized)
+      margin-left: -6px
+      margin-right: -6px
+
+      .swiper-slide
+        padding-left: 6px
+        padding-right: 6px
+        width: calc(100% / 5)
+
+    img
+      border: 1px solid transparent
+
+    .swiper-slide-thumb-active
+      img
+        border-color: $border-color

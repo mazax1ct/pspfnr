@@ -1,0 +1,90 @@
+.articles-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  li
+    &:first-child
+      .article
+        border-top: 1px solid $border-color
+
+.article
+  border-bottom: 1px solid $border-color
+  line-height: 1.5
+  padding-top: 20px
+  padding-bottom: 20px
+
+  @media(min-width: 1024px)
+    padding-top: 30px
+    padding-bottom: 30px
+
+  time
+    color: #9393A1
+    display: block
+    font-size: 14px
+    margin-bottom: 10px
+
+  h2
+    font-size: 18px
+    font-weight: 500
+    margin-top: 0
+    margin-bottom: 15px
+
+    @media(min-width: 1024px)
+      font-size: 22px
+
+  &__preview
+    margin-bottom: 15px
+
+  &__link
+    align-items: center
+    color: #000
+    display: flex
+    font-weight: 400
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $blue
+
+      svg
+        fill: $blue
+
+    svg
+      height: 18px
+      margin-left: 8px
+      transition: fill 0.3s
+      width: 18px
+
+  &--type_1
+    img
+      margin-bottom: 20px
+
+      @media(min-width: 1024px)
+        margin-bottom: 30px
+
+    h2
+      font-size: 24px
+      margin-bottom: 20px
+
+      @media(min-width: 1024px)
+        font-size: 32px
+        margin-bottom: 30px
+
+  &--type_2
+    img
+      margin-bottom: 20px
+
+      @media(min-width: 768px)
+        left: 0
+        position: absolute
+        top: 20px
+        margin-bottom: 0
+
+    h2
+      font-size: 24px
+      margin-bottom: 20px
+
+      @media(min-width: 1024px)
+        font-size: 32px
+        margin-bottom: 30px

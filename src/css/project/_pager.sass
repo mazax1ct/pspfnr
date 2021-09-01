@@ -1,0 +1,59 @@
+.pager
+  display: flex
+  font-size: 18px
+  font-weight: 600
+  justify-content: center
+  line-height: 1.5
+  list-style: none
+  margin: 40px auto
+  padding: 0
+
+  @media(min-width: 1024px)
+    margin-top: 80px
+    margin-bottom: 80px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__item
+    margin-left: 5px
+    margin-right: 5px
+
+    @media(min-width: 768px)
+      margin-left: 10px
+      margin-right: 10px
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &__arrow
+    svg
+      fill: $blue
+      height: 18px
+      transition: fill 0.3s
+      width: 18px
+
+    &:hover,
+    &:focus
+      fill: $blue_hover
+
+  &__link
+    align-items: center
+    color: #000
+    display: flex
+    height: 40px
+    justify-content: center
+    text-decoration: none
+    transition: color 0.3s
+    width: 40px
+
+    &:hover,
+    &:focus
+      color: $blue
+
+    &.is-active
+      background-color: $light_blue
+      color: #000
