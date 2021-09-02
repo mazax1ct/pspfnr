@@ -1,0 +1,28 @@
+.docs
+  margin-top: 40px
+  margin-bottom: 40px
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    margin-left: -10px
+    margin-right: -10px
+    margin-bottom: -20px
+    padding: 0
+
+  &__item
+    display: flex
+    margin-bottom: 20px
+    padding-left: 10px
+    padding-right: 10px
+    width: 100%
+
+    @media(min-width: 768px)
+      width: 33.33333%

@@ -1,0 +1,29 @@
+.image-block
+  margin-top: 4px
+  margin-bottom: 40px
+  margin-left: 0
+  margin-right: 0
+
+  &:last-child
+    margin-bottom: 0
+
+  &:first-child
+    margin-top: 0
+
+  @media(min-width: 768px)
+    display: flex
+
+  &__image
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      max-width: 290px
+      width: 34.5%
+
+  figcaption
+    flex-grow: 1
+
+    @media(min-width: 768px)
+      padding-left: 40px
+      width: 65.5%

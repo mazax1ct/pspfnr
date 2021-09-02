@@ -51,8 +51,11 @@
 
   &--type_2
     background-color: $light_blue
+    display: flex
+    flex-direction: column
     max-width: 420px
     padding: 20px
+    width: 100%
 
     @media(min-width: 768px)
       padding-left: 30px
@@ -61,13 +64,14 @@
   &__name
     font-size: 16px
     font-weight: 500
+    //min-height: 3em
     margin-bottom: 15px
 
     @media(min-width: 1024px)
       font-size: 20px
 
   &__image
-    margin-top: 25px
+    margin-top: auto
     margin-bottom: 25px
 
   &__link

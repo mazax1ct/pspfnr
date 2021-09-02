@@ -1,0 +1,67 @@
+.video-tracks
+  list-style: none
+  margin-top: 40px
+  margin-bottom: 40px
+  padding: 0
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
+
+  li
+    &:not(:last-child)
+      margin-bottom: 20px
+
+.video-track
+  border: 1px solid $border-color
+  color: #000
+  display: block
+  line-height: 1.5
+  padding: 3px
+  text-decoration: none
+  transition: background-color 0.3s, border-color 0.3s
+
+  @media(min-width: 768px)
+    display: flex
+
+  &:hover,
+  &:focus
+    background-color: $light_blue
+    border-color: $light_blue
+
+  &__image
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      min-width: 158px
+      width: 158px
+
+  &__info
+    display: flex
+    flex-direction: column
+    padding-top: 10px
+    padding-bottom: 10px
+
+    @media(min-width: 768px)
+      padding-left: 20px
+
+  &__title
+    font-weight: 500
+    font-size: 18px
+    margin-bottom: 10px
+
+  &__preview-text
+    font-size: 14px
+
+  &__prop
+    align-items: center
+    color: $blue
+    display: flex
+    font-size: 14px
+    margin-top: auto
+
+    img
+      margin-right: 10px

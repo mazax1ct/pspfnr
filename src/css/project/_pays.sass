@@ -1,0 +1,55 @@
+.pays
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      margin-left: -20px
+      margin-right: -20px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      display: flex
+      margin-bottom: 40px
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+.pay
+  background-color: $light_blue
+  display: flex
+  flex-direction: column
+  line-height: 1.5
+  padding: 20px
+  width: 100%
+
+  @media(min-width: 1024px)
+    padding: 30px
+
+  &__top
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 15px
+
+  &__title
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 10px
+    max-width: calc(100% - 100px)
+    padding-right: 10px
+
+  &__price
+    color: $blue
+    font-weight: 700
+    font-size: 26px
+    margin-left: auto
+    margin-bottom: 10px
+
+  &__bottom
+    margin-top: auto
