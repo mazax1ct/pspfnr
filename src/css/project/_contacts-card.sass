@@ -1,20 +1,17 @@
-.hot-line
+.contacts-card
   line-height: 1.5
+  margin-top: 40px
+  margin-bottom: 40px
+  padding: 20px
 
-  &--type_1,
-  &--type_2
-    padding: 20px
-    margin-top: 40px
-    margin-bottom: 40px
+  @media(min-width: 768px)
+    padding: 40px
 
-    &:first-child
-      margin-top: 0
+  &:first-child
+    margin-top: 0
 
-    &:last-child
-      margin-bottom: 0
-
-    @media(min-width: 768px)
-      padding: 40px
+  &:last-child
+    margin-bottom: 0
 
   &--type_1
     background-color: $light_blue
@@ -29,6 +26,12 @@
 
     @media(min-width: 768px)
       font-size: 28px
+
+  &__address
+    margin-bottom: 15px
+
+    @media(min-width: 1024px)
+      font-size: 18px
 
   &__phone
     font-size: 24px
@@ -47,16 +50,18 @@
       &:focus
         color: $blue_hover
 
-  p.hot-line__work-time
-    margin-bottom: -5px
-
   &__work-time
     display: flex
     flex-wrap: wrap
     font-size: 14px
+    margin-bottom: 20px
 
     span
       margin-bottom: 5px
 
       &:not(:last-child)
         margin-right: 40px
+
+  p.contacts-card__work-time
+    &:last-child
+      margin-bottom: -5px
