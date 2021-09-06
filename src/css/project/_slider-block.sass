@@ -1,6 +1,6 @@
 .slider-block
   max-width: 840px
-  
+
   &:not(:last-child)
     margin-bottom: 40px
 
@@ -16,10 +16,15 @@
       background-color: rgba(#000, 0.2)
       height: 40px
       justify-content: center
+      transition: background-color 0.3s
       width: 40px
 
       &::after
         display: none
+
+      &:hover,
+      &:focus
+        background-color: rgba(#000, 0.4)
 
       svg
         fill: #fff
@@ -38,6 +43,16 @@
 
     img
       border: 1px solid transparent
+      transition: transform 0.3s
+
+    .swiper-slide
+      cursor: pointer
+      overflow: hidden
+
+      &:hover,
+      &:focus
+        img
+          transform: scale(1.1)
 
     .swiper-slide-thumb-active
       img

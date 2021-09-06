@@ -1,0 +1,46 @@
+.titled-banner
+  background-color: $border-color
+  position: relative
+
+  &:not(:last-child)
+    margin-bottom: 40px
+
+  img
+    object-fit: cover
+    height: 315px
+    width: 100%
+
+    @media(min-width: 1024px)
+      height: 465px
+
+  &__title
+    bottom: 0
+    align-items: center
+    display: flex
+    left: 0
+    padding: 20px
+    position: absolute
+    top: auto
+
+    @media(min-width: 1024px)
+      padding: 30px
+
+    & > *
+      margin-top: 0
+      margin-bottom: 0
+
+    svg
+      fill: $blue
+      height: 30px
+      margin-right: 20px
+      min-width: 30px
+      width: 30px
+
+      @media(min-width: 1024px)
+        height: 42px
+        min-width: 42px
+        width: 42px
+
+    h1
+      @media(min-width: 1024px)
+        font-size: 38px

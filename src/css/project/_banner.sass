@@ -2,6 +2,8 @@
   line-height: 1.5
   margin-top: 40px
   margin-bottom: 40px
+  max-width: 400px
+  position: relative
 
   &:first-child
     margin-top: 0
@@ -24,6 +26,14 @@
     display: flex
     font-size: 18px
     font-weight: 400
+
+    &::after
+      bottom: 0
+      content: ''
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
 
     &:hover,
     &:focus
