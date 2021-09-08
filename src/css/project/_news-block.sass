@@ -1,0 +1,73 @@
+.news-block
+  margin-bottom: 40px
+
+  @media(min-width: 1200px)
+    margin-bottom: 80px
+
+  &:last-child
+    margin-bottom: 0
+
+  & > h2
+    @media(min-width: 1024px)
+      font-size: 42px
+      font-weight: 700
+      margin-bottom: 40px
+
+  &__container
+    @media(min-width: 1024px)
+      border-top: 1px solid $border-color
+      border-bottom: 1px solid $border-color
+
+  &__inner
+    @media(min-width: 1024px)
+      display: flex
+      margin-left: -20px
+      margin-right: -20px
+
+  &__block
+    @media(min-width: 1024px)
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+    .article--type_1
+      border-bottom: none
+
+      @media(max-width: 1023px)
+        padding-top: 0
+
+    .articles-list
+      li
+        &:first-child
+          .article
+            @media(min-width: 1024px)
+              border-top: none
+
+        &:last-child
+          .article
+            @media(min-width: 1024px)
+              border-bottom: none
+
+  .articles-list
+    @media(min-width: 1024px)
+      border-top: 1px solid $border-color
+      border-bottom: 1px solid $border-color
+      display: grid
+      grid-template-columns: 1fr 1fr
+      column-gap: 40px
+
+    li
+      &:first-child
+        @media(min-width: 1024px)
+          align-self: stretch
+          grid-row: span 3
+
+        .article
+          @media(min-width: 1024px)
+            border-top: none
+            border-bottom: none
+
+      &:last-child
+        .article
+          @media(min-width: 1024px)
+            border-bottom: none

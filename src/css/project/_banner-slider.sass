@@ -1,6 +1,6 @@
 .banner-slider
   margin-bottom: 60px
-  
+
   .swiper-slide
     background-color: $border-color
     height: 400px
@@ -10,12 +10,12 @@
         color: #fff
 
     img
-      bottom: 0
+      height: 100%
       left: 0
       object-fit: cover
       position: absolute
-      right: 0
       top: 0
+      width: 100%
 
   &__container
     align-items: flex-start
@@ -61,6 +61,12 @@
 
     &.swiper-pagination-bullet-active
       background-color: $blue
+
+  h1,
+  .h1
+    @media(min-width: 1024px)
+      font-size: 38px
+
 
 a.banner-slider__container
   &:hover,
