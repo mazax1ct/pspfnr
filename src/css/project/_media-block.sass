@@ -1,0 +1,30 @@
+.media-block
+  &:not(:first-child)
+    margin-top: 40px
+
+    @media(min-width: 1200px)
+      margin-bottom: 80px
+
+  &:not(:last-child)
+    margin-bottom: 40px
+
+    @media(min-width: 1200px)
+      margin-bottom: 80px
+
+  @media(min-width: 1024px)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 40px
+
+  & > h2
+    @media(min-width: 1024px)
+      font-size: 38px
+      font-weight: 700
+      margin-bottom: 40px
+
+  .video
+    @media(min-width: 1024px)
+      align-self: center
+      grid-row: span 3
+      margin-top: 0
+      margin-bottom: 0

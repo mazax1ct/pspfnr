@@ -21,7 +21,7 @@
     //= template/style.html
 </head>
 
-<body>
+<body class="main-page">
     //= template/preloader.html
 
     //= template/sprite.html
@@ -163,6 +163,72 @@
                 </div>
             </section>
 
+            <section class="structure-map">
+                <h2>Структура ПСПФНР</h2>
+                <div class="structure-map__search">
+                    <input class="structure-map__search-input" type="text" placeholder="Введите город" autocomplete="off">
+                    <div class="structure-map__search-dropdown">
+                        <a href="#">Ангарск</a>
+                        <a href="#">Астрахань</a>
+                        <a href="#">Барнаул</a>
+                        <a href="#">Вельск</a>
+                        <a href="#">Верхний Уфалей</a>
+                        <a href="#">Вологда</a>
+                        <a href="#">Волгоград</a>
+                        <a href="#">Воронеж</a>
+                        <a href="#">Грозный</a>
+                        <a href="#">Екатеринбург</a>
+                        <a href="#">Иваново</a>
+                        <a href="#">Ижевск</a>
+                        <a href="#">Йошкар-Ола</a>
+                        <a href="#">Казань</a>
+                        <a href="#">Калининград</a>
+                        <a href="#">Керчь</a>
+                        <a href="#">Коркино</a>
+                        <a href="#">Краснодар</a>
+                        <a href="#">Курск</a>
+                        <a href="#">Кызыл</a>
+                        <a href="#">Липецк</a>
+                        <a href="#">Магнитогорск</a>
+                        <a href="#">Майкоп</a>
+                        <p class="no-result">Ничего не найдено!</p>
+                    </div>
+                </div>
+
+                <div class="structure-map__map">
+                    <div class="structure-map__popup">
+                        <p class="structure-map__popup-title"></p>
+                        <div class="structure-map__popup-leader">
+                            <div class="structure-map__popup-img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="structure-map__popup-info">
+                                <p class="structure-map__popup-leader-name"></p>
+                                <p class="structure-map__popup-leader-about"></p>
+                                <a class="structure-map__popup-link" href="">
+                                    Подробнее
+                                    <svg>
+                                        <use xlink:href="#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    //= template/structure-map.html
+                </div>
+
+                <div class="structure-map__fo-list">
+                    <a href="#" data-target="6">Северо-Западный ФО</a>
+                    <a href="#" data-target="1">Центральный ФО</a>
+                    <a href="#" data-target="2">Приволжский ФО</a>
+                    <a href="#" data-target="7">Северо-Кавказский ФО</a>
+                    <a href="#" data-target="8">Южный ФО</a>
+                    <a href="#" data-target="3">Уральский ФО</a>
+                    <a href="#" data-target="4">Сибирский ФО</a>
+                    <a href="#" data-target="5">Дальневосточный ФО</a>
+                </div>
+            </section>
+
             <section class="news-block">
                 <h2>Новости</h2>
                 <ul class="articles-list">
@@ -254,7 +320,70 @@
                 </div>
             </section>
 
+            <div class="routing">
+                <ul class="routing__list">
+                    <li class="routing__item">
+                        <a class="routing-link" href="#">
+                            <span class="routing-link__title">Профсоюз помогает</span>
+                            <span class="routing-link__text">Юристы Профсоюза избавили члена ПСПФНР от необоснованной задолженности по ЖКХ</span>
+                            <svg>
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="routing__item">
+                        <a class="routing-link" href="#">
+                            <span class="routing-link__title">Юристы разъясняют</span>
+                            <span class="routing-link__text">Составление искового заявления самостоятельно</span>
+                            <svg>
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="routing__item">
+                        <a class="routing-link" href="#">
+                            <span class="routing-link__title">Следим за событиями</span>
+                            <span class="routing-link__text">Юрист Профсоюза прокомментировал инициативу Минздрава о методах борьбы с курением</span>
+                            <svg>
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-center">
+                <a class="btn btn--type_3" href="#">Посмотреть все</a>
+            </p>
+
             //= template/info.html
+
+            <section class="media-block">
+                <h2>Поддержка инвалидов<br> по слуху</h2>
+                <figure class="video">
+                    <div class="js-video video__container">
+                        <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=bMPOfhoDVwo" target="_blank">
+                            <img class="video__media" src="images/content/video/img_3.jpg" srcset="images/content/video/img_3@2x.jpg 2x" alt="Видео 1" title="Видео 1" />
+                            <button class="js-video__button video__button" type="button" aria-label="Запустить видео" title="Запустить видео">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="#play" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </figure>
+                <div>
+                    <p class="large-text">Профсоюз поддерживает инвалидов по слуху во всем мире. Мы отстаиваем нарушенные права, организуем сурдоперевод каждого мероприятия и создаем комфортную среду для глухих и слабослышащих членов организации.</p>
+                    <p>
+                        <a class="more-link" href="#">
+                            Подробнее
+                            <svg aria-hidden="true">
+                                <use xlink:href="#arrow_right" />
+                            </svg>
+                        </a>
+                    </p>
+                </div>
+            </section>
 
             //= template/links.html
         </div>
@@ -265,6 +394,8 @@
     //= template/scripts.html
     <script src="js/banner-slider.js"></script>
     <script src="js/programs-block.js"></script>
+    <script src="js/structure-map.js"></script>
+
 </body>
 
 </html>
