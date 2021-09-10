@@ -221,6 +221,48 @@
       &:focus
         color: $blue
 
+  &__fos
+    margin-top: 40px
+    margin-bottom: -30px
+
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+
+  &__fos-column
+    @media(min-width: 768px)
+      padding-right: 40px
+      width: 50%
+
+    @media(min-width: 1024px)
+      width: 25%
+
+    ul
+      list-style: none
+      line-height: 1.5
+      margin-bottom: 30px
+      padding: 0
+
+      li
+        font-weight: 400
+
+        &:first-child
+          font-size: 18px
+          font-weight: 500
+          margin-bottom: 10px
+
+        a
+          color: #000
+          display: inline-block
+          padding-top: 5px
+          padding-bottom: 5px
+          transition: color 0.3s
+          vertical-align: top
+
+          &:hover,
+          &:focus
+            color: $blue
+
 .js-map-popup
   cursor: pointer
   transition: fill 0.3s

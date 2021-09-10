@@ -1,5 +1,5 @@
 function filter(el) {
-  var value = $(el).val();
+  var value = $(el).val().toLowerCase();
 
   $('.structure-map__search-dropdown a').each(function() {
     if ($(this).text().toLowerCase().search(value) > -1) {
@@ -65,12 +65,12 @@ $(document).on('mouseleave', '.js-map-popup', function () {
   $('.structure-map__popup').removeClass('is-open');
 });
 
-$(document).on('mouseenter', '.structure-map__fo-list a', function () {
+$(document).on('mouseenter', '.structure-map__fo-list a, .structure-map__fos ul li:first-child a', function () {
   $('.js-map-popup[data-target="'+ $(this).attr('data-target') +'"]').addClass('hover');
   $('.js-map-popup[data-target="'+ $(this).attr('data-target') +'"]').trigger('mouseenter');
 });
 
-$(document).on('mouseleave', '.structure-map__fo-list a', function () {
+$(document).on('mouseleave', '.structure-map__fo-list a, .structure-map__fos ul li:first-child a', function () {
   $('.js-map-popup[data-target="'+ $(this).attr('data-target') +'"]').removeClass('hover');
   $('.structure-map__popup').removeClass('is-open');
 });
