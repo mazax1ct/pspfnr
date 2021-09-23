@@ -1,10 +1,18 @@
 .note
   border: 1px solid $border-color
   font-weight: 400
+  margin-top: 40px
+  margin-bottom: 40px
   padding: 15px
 
   @media(min-width: 768px)
     padding: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+  &:first-child
+    margin-top: 0
 
   &__title
     font-size: 16px
