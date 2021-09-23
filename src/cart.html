@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Корзина - ПСПФНР</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="main.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                Корзина
+            </li>
+        </ul>
+
+        <div class="container">
+            <h1>Корзина</h1>
+
+            <div class="block_3">
+                <div id="warning_message"></div>
+                <form method="post" action="/cart/?NEW=Y" name="basket_form" id="basket_form">
+                    <div id="basket_form_container">
+                        <div class="bx_ordercart bx_red">
+                            <div id="basket_items_list">
+                                <div class="bx_ordercart_order_table_container">
+                                    <table id="basket_items">
+                                        <tr>
+                                            <td class="item" id="col_NAME">Товары</td>
+                                            <td class="price" id="col_PRICE">Цена</td>
+                                            <td class="custom" id="col_QUANTITY">Количество</td>
+                                            <td class="custom" id="col_SUM">Сумма</td>
+                                            <td class="custom"></td>
+                                        </tr>
+                                        <tr id="221034" data-item-name="Ежегодный членский взнос" data-item-brand="" data-item-price="3000" data-item-currency="RUB">
+                                            <td class="item">
+                                                <h2 class="bx_ordercart_itemtitle">
+                                                    <a href="/contributions/union-dues/">Ежегодный членский взнос</a>
+                                                </h2>
+                                                <div class="bx_ordercart_itemart"></div>
+                                            </td>
+                                            <td class="price">
+                                                <div class="current_price" id="current_price_221034">3 000 ₽</div>
+                                                <div class="old_price" id="old_price_221034"></div>
+                                            </td>
+                                            <td class="custom">
+                                                <span>Количество:</span>
+                                                <div class="centered">
+                                                    <table class="counter" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <input type="text" size="3" id="QUANTITY_INPUT_221034" name="QUANTITY_INPUT_221034" maxlength="18" style="max-width: 50px" value="1"
+                                                                  onchange="updateQuantity('QUANTITY_INPUT_221034', '221034', 1, false)">
+                                                            </td>
+                                                            <td id="basket_quantity_control">
+                                                                <div class="basket_quantity_control">
+                                                                    <a href="javascript:void(0);" class="plus" onclick="setQuantity(221034, 1, 'up', false);"></a>
+                                                                    <a href="javascript:void(0);" class="minus" onclick="setQuantity(221034, 1, 'down', false);"></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <input type="hidden" id="QUANTITY_221034" name="QUANTITY_221034" value="1">
+                                            </td>
+                                            <td class="custom">
+                                                <span>Сумма:</span>
+                                                <div id="sum_221034">3 000 ₽</div>
+                                            </td>
+                                            <td class="control">
+                                                <a href="/cart/?basketAction=delete&amp;id=221034" onclick="return deleteProductRow(this)">Удалить</a><br>
+                                            </td>
+                                        </tr>
+                                        <tr id="221039" data-item-name="Ежемесячный членский взнос" data-item-brand="" data-item-price="300" data-item-currency="RUB">
+                                            <td class="item">
+                                                <h2 class="bx_ordercart_itemtitle">
+                                                    <a href="/contributions/union-dues/">Ежемесячный членский взнос</a>
+                                                </h2>
+                                                <div class="bx_ordercart_itemart"></div>
+                                            </td>
+                                            <td class="price">
+                                                <div class="current_price" id="current_price_221039">300 ₽</div>
+                                                <div class="old_price" id="old_price_221039"></div>
+                                            </td>
+                                            <td class="custom">
+                                                <span>Количество:</span>
+                                                <div class="centered">
+                                                    <table class="counter" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <input type="text" size="3" id="QUANTITY_INPUT_221039" name="QUANTITY_INPUT_221039" maxlength="18" style="max-width: 50px" value="1"
+                                                                  onchange="updateQuantity('QUANTITY_INPUT_221039', '221039', 1, false)">
+                                                            </td>
+                                                            <td id="basket_quantity_control">
+                                                                <div class="basket_quantity_control">
+                                                                    <a href="javascript:void(0);" class="plus" onclick="setQuantity(221039, 1, 'up', false);"></a>
+                                                                    <a href="javascript:void(0);" class="minus" onclick="setQuantity(221039, 1, 'down', false);"></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <input type="hidden" id="QUANTITY_221039" name="QUANTITY_221039" value="1">
+                                            </td>
+                                            <td class="custom">
+                                                <span>Сумма:</span>
+                                                <div id="sum_221039">300 ₽</div>
+                                            </td>
+                                            <td class="control">
+                                                <a href="/cart/?basketAction=delete&amp;id=221039" onclick="return deleteProductRow(this)">Удалить</a><br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <input type="hidden" id="column_headers" value="NAME,DELETE,PRICE,QUANTITY,SUM,PREVIEW_PICTURE">
+                                <input type="hidden" id="offers_props" value="">
+                                <input type="hidden" id="action_var" value="basketAction">
+                                <input type="hidden" id="quantity_float" value="N">
+                                <input type="hidden" id="price_vat_show_value" value="N">
+                                <input type="hidden" id="hide_coupon" value="Y">
+                                <input type="hidden" id="use_prepayment" value="N">
+                                <input type="hidden" id="auto_calculation" value="Y">
+                                <div class="bx_ordercart_order_pay">
+                                    <div class="bx_ordercart_order_pay_left" id="coupons_block">&nbsp;</div>
+                                    <div class="bx_ordercart_order_pay_right">
+                                        <table class="bx_ordercart_order_sum">
+                                            <tr>
+                                                <td class="fwb">Итого:</td>
+                                                <td class="fwb" id="allSum_FORMATED">3&nbsp;300&nbsp;₽</td>
+                                            </tr>
+                                        </table>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                    <div style="clear:both;"></div>
+                                    <div class="bx_ordercart_order_pay_center">
+                                        <a href="javascript:void(0)" onclick="checkOut();" class="checkout button button--red">Оформить заказ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="basket_items_delayed" class="bx_ordercart_order_table_container" style="display:none">
+                                <table id="delayed_items">
+                                    <tr>
+                                        <td class="item" colspan="2">Товары</td>
+                                        <td class="price">Цена</td>
+                                        <td class="custom">Количество</td>
+                                        <td class="custom">Сумма</td>
+                                        <td class="custom"></td>
+                                        <td class="custom"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="basket_items_subscribed" class="bx_ordercart_order_table_container" style="display:none">
+                                <table>
+                                    <tr>
+                                        <td class="item" colspan="2">Товары</td>
+                                        <td class="price">Цена</td>
+                                        <td class="custom">Количество</td>
+                                        <td class="custom">Сумма</td>
+                                        <td class="custom"></td>
+                                        <td class="custom"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="basket_items_not_available" class="bx_ordercart_order_table_container" style="display:none">
+                                <table>
+                                    <tr>
+                                        <td class="item" colspan="2">Товары</td>
+                                        <td class="price">Цена</td>
+                                        <td class="custom">Количество</td>
+                                        <td class="custom"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="BasketOrder" value="BasketOrder">
+                    <!-- <input type="hidden" name="ajax_post" id="ajax_post" value="Y"> -->
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="include-area container">
+        //= template/info.html
+
+        //= template/links.html
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+</body>
+
+</html>
