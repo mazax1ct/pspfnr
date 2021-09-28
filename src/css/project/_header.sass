@@ -99,7 +99,7 @@
     margin-right: 25px
     width: 47px
 
-    @media(min-width: 768px)
+    @media(min-width: 1350px)
       margin-right: 45px
 
   &__burger
@@ -111,11 +111,13 @@
     font-weight: 700
     display: flex
     height: 40px
-    //margin-right: 20px
     padding: 0
     transition: color 0.3s
 
     @media(min-width: 768px)
+      margin-right: 25px
+
+    @media(min-width: 1350px)
       margin-right: 40px
 
     &:hover,
@@ -146,6 +148,10 @@
     text-decoration: none
     transition: color 0.3s
 
+    &.is-authorized
+      font-size: 12px
+      line-height: 1.2
+
     &:hover,
     &:focus
       color: $blue
@@ -156,6 +162,7 @@
     svg
       fill: #000
       height: 18px
+      min-width: 18px
       transition: fill 0.3s
       width: 18px
 
@@ -164,6 +171,18 @@
 
       @media(max-width: 1023px)
         display: none
+
+  &__logout
+    align-items: center
+    color: #000
+    display: flex
+    height: 40px
+    margin-left: 15px
+    position: relative
+    text-decoration: none
+
+    @media(min-width: 1024px)
+      margin-left: 30px
 
   &__cart-link
     align-items: center
@@ -209,6 +228,8 @@
     z-index: 1
 
 .main-menu
+  margin-right: 20px
+
   &.is-open
     .main-menu__dropdown
       box-shadow: 0 1px 1px 0 rgba(#000, 0.1)
@@ -243,7 +264,10 @@
     position: relative
 
     &:not(:last-child)
-      padding-right: 30px
+      padding-right: 20px
+
+      @media(min-width: 1350px)
+        padding-right: 30px
 
   &__link
     color: #000
@@ -252,10 +276,25 @@
     padding-bottom: 7px
     text-decoration: none
     transition: color 0.3s
+    white-space: nowrap
 
     &:hover,
     &:focus
       color: $blue
+
+    &.red
+      color: $red
+
+      &:hover,
+      &:focus
+        color: $red-hover
+
+    &.blue
+      color: $blue
+
+      &:hover,
+      &:focus
+        color: $blue-hover
 
   &__dropdown
     background-color: $light_blue
