@@ -1,0 +1,38 @@
+.pays-history
+  @media(min-width: 1024px)
+    display: flex
+    margin-left: -20px
+    margin-right: -20px
+
+  &__column
+    @media(min-width: 1024px)
+      padding-left: 20px
+      padding-right: 20px
+      width: 33.33333%
+
+  table
+    border: none
+    table-layout: fixed
+
+    tbody
+      tr
+        &:nth-child(even)
+          td
+            background-color: $light_blue
+
+  th
+    border: none
+    border-bottom: 1px solid $border-color
+    font-weight: 300
+
+  td
+    border: none
+
+    &.type_1
+      color: $blue
+
+    &.type_2
+      color: $red
+
+    &.type_3
+      color: #676767
