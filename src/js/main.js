@@ -78,3 +78,9 @@ $(window).on("orientationchange", function(event) {
     }
   }
 });
+
+//аккордеон
+$(document).on('click', '.accordion__toggler a', function () {
+	$(this).closest('.accordion').find('.accordion__body').slideToggle(1000);
+	return false;
+});
