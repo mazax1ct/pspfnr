@@ -59,3 +59,55 @@
 
   &__bottom
     margin-top: auto
+
+.pay-form
+  background-color: #f9fff6
+  line-height: 1.5
+  margin-top: 40px
+  margin-bottom: 40px
+  padding: 20px
+
+  @media(min-width: 768px)
+    padding: 30px
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
+
+  &__title
+    font-size: 16px
+    font-weight: 500
+    margin-bottom: 10px
+
+    @media(min-width: 375px)
+      font-size: 18px
+
+  &__form
+    display: flex
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+    .input-label
+      margin-bottom: 0
+      margin-right: 20px
+
+    .input
+      background-color: transparent
+      border-width: 2px
+      border-color: $green
+      border-radius: 5px
+
+      &:focus
+        border-color: $green_hover
+
+      &::-webkit-input-placeholder
+        color: $green
+
+      &::-moz-placeholder
+        color: $green
+
+      &:-ms-input-placeholder
+        color: $green
