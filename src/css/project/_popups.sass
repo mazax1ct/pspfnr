@@ -1,0 +1,74 @@
+.popup-shade
+  background-color: rgba(#0c1117, 0.8)
+  bottom: 0
+  display: none
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 100
+
+  &__inner
+    bottom: 0
+    display: flex
+    left: 0
+    overflow-y: auto
+    position: absolute
+    padding: 16px
+    right: 0
+    top: 0
+
+.popup
+  background-color: #fff
+  box-shadow: 0 0 12px 0 rgba(#fff, 0.7)
+  border-radius: 8px
+  display: none
+  max-height: 96%
+  max-width: 800px
+  margin: auto
+  overflow-y: auto
+  position: relative
+  padding: 48px 16px 36px
+  width: 100%
+
+  &--500
+    max-width: 500px
+
+    @media(min-width: 768px)
+      padding-left: 24px
+      padding-right: 24px
+
+    h2
+      margin-top: 0
+
+  &__close
+    align-items: center
+    border-radius: 2px
+    border: none
+    background-color: rgba(#0c1117, 0.8)
+    cursor: pointer
+    display: flex
+    height: 32px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 16px
+    top: 16px
+    transition: background-color 0.3s
+    width: 32px
+
+    svg
+      fill: #fff
+      height: 12px
+      width: 12px
+
+  &__buttons
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    .btn
+      font-size: 14px
+      min-width: 190px
+      margin: 5px

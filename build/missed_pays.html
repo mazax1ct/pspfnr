@@ -476,8 +476,51 @@
                     <span>К оплате: <span>500</span>р.</span>
                 </p>
 
-                <p><button class="btn btn--type_1" type="submit">Купить</button></p>
+                <p><button class="js-popup-opener btn btn--type_1" type="submit" data-popup="js-popup-data">Купить</button></p>
             </form>
+
+            <div class="popup-shade">
+                <div class="popup-shade__inner">
+                    <div class="js-popup-data popup popup--500">
+                        <button class="js-popup-closer popup__close" type="button" title="Закрыть">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                        </button>
+
+                        <h2>Пожалуйста, проверьте указанные данные<br> и подтвердите отправку заказа.</h2>
+
+                        <p>Взносы будут проставлены в кабинет:</p>
+
+                        <h3>Фамилия Имя Отчество</h3>
+
+                        <p>За следующие месяцы:</p>
+
+                        <ul>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                            <li>Январь 2022</li>
+                        </ul>
+
+                        <div class="popup__buttons">
+                            <button class="btn btn--type_1" type="button">Изменить данные</button>
+                            <button class="btn btn--type_2" type="button">Оплатить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -582,6 +625,7 @@
     <script src="js/slider-block.js"></script>
     <script src="js/video.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/popup.js"></script>
     <script src="js/main.js"></script>
     <script src="js/preloader.js"></script>
 </body>
