@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Гранты - ПСПФНР</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+    <link rel="stylesheet" href="css/air-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="main.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">Профсоюзная зарядка</li>
+        </ul>
+
+        <div class="container">
+            <h1>Профсоюзная зарядка</h1>
+
+            <div class="charge">
+                <div class="charge__video-block">
+                    <div class="charge__videos">
+                        <div class="charge__video">
+                            <img src="images/content/charge/video_small.jpg" alt="">
+                            <p class="charge__video-caption"><span>Растяжка</span> <span>60 секунд</span></p>
+                        </div>
+
+                        <div class="charge__video">
+                            <img src="images/content/charge/video_small.jpg" alt="">
+                            <p class="charge__video-caption"><span>Лимфодренаж</span> <span>60 секунд</span></p>
+                        </div>
+
+                        <div class="charge__video">
+                            <img src="images/content/charge/video_small.jpg" alt="">
+                            <p class="charge__video-caption"><span>Жиросжигание</span> <span>60 секунд</span></p>
+                        </div>
+
+                        <div class="charge__video">
+                            <img src="images/content/charge/video_small.jpg" alt="">
+                            <p class="charge__video-caption"><span>Вакуум</span> <span>60 секунд</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charge__info-block">
+                    <p class="charge__date">18 мая, воскресенье</p>
+                    <h2>Программа выходного дня</h2>
+
+                    <div class="charge__text">
+                        <p>Сегодня мы предлагаем Вам выполнить несколько упражнений на Ваш выбор. Их можно выполнять в любой последовательности и в любом сочетании.</p>
+
+                        <p>Выполнение любого из упражнений засчитывается в активный день!</p>
+
+                        <p class="charge__note">Продолжительность зарядки: произвольная</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charge-calendar">
+                <h2 class="h3">Ваш прогресс занятий</h2>
+
+                <div class="charge-calendar__inner">
+                    <div class="charge-calendar__week">
+                        <div class="charge-calendar__day">
+                            <p class="charge-calendar__day-name">Пн</p>
+                            <p class="charge-calendar__day-num">12</p>
+                        </div>
+
+                        <div class="charge-calendar__day">
+                            <p class="charge-calendar__day-name">Вт <img src="images/content/charge/check.svg" alt=""></p>
+                            <p class="charge-calendar__day-num">13</p>
+                        </div>
+
+                        <div class="charge-calendar__day">
+                            <p class="charge-calendar__day-name">Ср</p>
+                            <p class="charge-calendar__day-num">14</p>
+                        </div>
+
+                        <div class="charge-calendar__day">
+                            <p class="charge-calendar__day-name">Чт</p>
+                            <p class="charge-calendar__day-num">15</p>
+                        </div>
+
+                        <div class="charge-calendar__day">
+                            <p class="charge-calendar__day-name">Пт <img src="images/content/charge/check.svg" alt=""></p>
+                            <p class="charge-calendar__day-num">16</p>
+                        </div>
+
+                        <div class="charge-calendar__day">
+                            <p class="charge-calendar__day-name">Сб</p>
+                            <p class="charge-calendar__day-num">17</p>
+                        </div>
+
+                        <div class="charge-calendar__day charge-calendar__day--current">
+                            <p class="charge-calendar__day-name">Вс</p>
+                            <p class="charge-calendar__day-num">18</p>
+                        </div>
+                    </div>
+
+                    <div class="charge-calendar__streak">
+                        <p class="charge-calendar__streak-text"><span>2</span> активных дня</p>
+
+                        <button class="charge-calendar__streak-button" type="button" data-fancybox="charge_calendar" data-src="#charge_calendar" title="Показать календарь">
+                            <img src="images/content/charge/calendar.svg" alt="">
+                        </button>
+
+                        <div id="charge_calendar" class="charge-calendar-popup">
+                            <h3>Календарь активности</h3>
+                            <div id="charge_calendar_el"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+
+    <script src="js/air-datepicker.js"></script>
+
+    <script src="js/charge.js"></script>
+</body>
+
+</html>
