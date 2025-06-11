@@ -1,0 +1,110 @@
+.news-slider {
+    margin-bottom: 40px;
+    @media(min-width: 1200px) {
+        margin-bottom: 80px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__title-block {
+        align-items: center;
+        display: flex;
+        gap: 10px 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @media(min-width: 1024px) {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin: 0;
+            @media(min-width: 1024px) {
+                font-size: 42px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            height: 40px;
+            justify-content: center;
+            margin: 0;
+            position: static;
+            padding: 0;
+            transition: opacity 0.3s;
+            width: 40px;
+            @media(min-width: 1024px) {
+                height: 54px;
+                width: 54px;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            svg {
+                fill: $blue;
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+
+    .swiper-slide {
+        height: auto;
+
+        .news-card {
+            height: 100%;
+        }
+    }
+}
+
+.news-card {
+    background-color: $light_blue;
+    padding: 30px;
+
+    &__date {
+        color: $placeholder-color;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+
+    &__more {
+        align-items: center;
+        color: #000;
+        display: flex;
+        gap: 8px;
+        font-size: 16px;
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            width: 16px;
+        }
+    }
+}
